@@ -1,0 +1,71 @@
+/*----Globals----*/
+
+body {margin:0;padding:0;}
+a, p, h1, h2, h3, h4, h5, h6 {color:#222;}
+img {padding:0;margin:0;}
+.text {font-family:'Roboto Slab';margin:0;padding:0;}
+.center {text-align:center;}
+.title {font-weight:300;font-size:80px;padding:10px 0 0 0;}
+.subTitle1 {font-weight:300;padding:20px 0 0 0;}
+.subTitle2 {font-weight:300;text-align:left;font-size:20px;}
+.hrule {width:200px;margin:30px auto 20px auto;}
+.clearFix {clear:both;height:5px;}
+.stars {display:block;width:200px;margin:0 auto;}
+.stars2 {display:block;width:200px;margin:10px auto 20px auto;}
+
+/*----Header----*/
+
+.poster {width:100%;margin:0 auto;display:block;}
+nav {width:100%;}
+nav ul {display:inline-block;list-style:none;}
+
+/*----Main----*/
+
+.photoset {width:90%;margin:30px auto;}
+.photoset img {margin:5px;float:left;width:48%;}
+
+/*----About----*/
+
+#about {margin-top:25px;}
+.aboutText {width:89%;margin:10px auto;max-width:600px;}
+.textP {text-align:justify;padding:10px 0;font-weight:300;}
+.back {font-size:14px;}
+.back a {color:#000;text-decoration:none;text-align:center;}
+.back a:hover {text-decoration:underline;}
+.mailLink {color:#000;text-decoration:none;font-weight:400;}
+a.mailLink:hover {text-decoration:underline;}
+
+/*----Social----*/
+
+#social {margin-top:25px;}
+.socialIcons {width:250px;margin:0 auto;}
+.socialIconsLeft {float:left;clear:none;}
+.socialIconsRight {float:right;clear:none;}
+
+/*----Footer----*/
+footer p {color: lightgrey;text-align: center;padding:0 0 100 100;}
+
+/*----Screen Widths----*/
+
+@media screen and (max-width: 930px) {
+	.title {font-size:60px;}
+}
+@media screen and (max-width: 700px) {
+	.title {font-size:45px;}
+	.photoset img {margin:0;width:50%;}
+	.photoset {width:100%;}
+	.resize {width:60%;margin:0 auto;}
+	.clearFix {height:0;}
+}
+@media screen and (max-width: 525px) {
+	.title {font-size:30px;}
+	.subTitle1 {font-size:14px;}
+	.hrule {margin:20px auto 5px auto;}
+	.stars {width:150px;}
+	.subTitle1 {padding:5px 0;}
+}
+
+@media screen and (max-width: 400px) {
+	.title {font-size:24px;}
+	.resize {width:100%;}
+}

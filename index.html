@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+  <link href="css/base.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--Smooth scrolling-->
+  <script>
+    jQuery(document).ready(function($) {
+
+      $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+  </script>
+  <!--Smooth scrolling end-->
+</head>
+
+<body>
+  <header>
+    <img class="poster" id="poster" src="images/poster.jpg" width="100%" />
+    <h1 class="text title center">Brendon Reed Photo Co.</h1>
+    <img src="images/stars.png" class="stars" />
+    <h3 class="text subTitle1 resize center">landscapes - people - grandeur views - water - night - ocean - light</h3>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <h3 class="text subTitle1"><a href="#about" class="scroll">about</a></h3>
+      </li>
+      <li>
+        <h3 class="text subTitle1"><a href="#social" class="scroll">social</a></h3>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="photoset">
+      <img src="images/6.jpg" />
+      <img src="images/9.jpg" />
+      <img src="images/10.jpg" />
+      <img src="images/8.jpg" />
+      <img src="images/7.jpg" />
+      <img src="images/4.jpg" />
+      <img src="images/5.jpg" />
+      <img src="images/2.jpg" />
+      <img src="images/3.jpg" />
+      <img src="images/1.jpg" />
+    </section>
+    <div class="clearFix"></div>
+  </main>
+  <section id="about">
+    <h1 class="text title">about</h1>
+    <h3 class="text subTitle1 back"><a href="#poster" class="scroll">^ top</a></h3>
+    <img src="images/stars.png" class="stars" />
+    <div class="aboutText">
+      <p class="text textP">Landscape and person photographer. Natural light is my best friend. I like to go to new and exciting places and capture unique images. Every scene is extraordinary if you pay enough attention. I believe true landscape
+        photography is faithfully portraying what the eye perceives - anything less or more is not natural. I always aim to capture the initial moment of awe when viewing a scene, a person, or an idea.</p>
+      <p class="text textP" style="text-align:left;">Contact me: <a class="mailLink" href="mailto:info@brendonreedphoto.co">info@brendonreedphoto.co</a></p>
+    </div>
+    <img src="images/about.jpg" width="89%" style="display:block;margin:10px auto 10px auto;max-width:600px;" />
+  </section>
+  <section id="social">
+    <h1 class="text title">social</h1>
+    <h3 class="text subTitle1 back"><a href="#poster" class="scroll">^ top</a></h3>
+    <img src="images/stars.png" class="stars" />
+    <br />
+    <div class="socialIcons">
+      <a href="http://www.facebook.com/brendonreedphotography" target="_blank"><img src="images/fb.png" width="45%" class="socialIconsLeft" /></a>
+      <a href="#" target="_blank"><img src="images/g.png" width="45%" class="socialIconsRight" /></a>
+    </div>
+  </section>
+  <div class="clearFix" style="height:100px;"></div>
+  <footer>
+    <p>Copyright 2022 Brendon Reed
+    <p>
+  </footer>
+</body>
+
+</html>
